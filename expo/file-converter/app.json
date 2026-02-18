@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "File Converter",
+    "slug": "file-converter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0F172A"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      },
+      "package": "com.fileconverter.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-document-picker",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow File Converter to access your photos for conversion.",
+          "savePhotosPermission": "Allow File Converter to save converted files.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
